@@ -2,44 +2,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20sp"
     android:gravity="center"
-    android:orientation="vertical"
-    android:layout_margin="20sp">
+    android:orientation="vertical">
 
 
-    <LinearLayout
+    <Button
+        android:id="@+id/button_toast"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:height="60sp"
+        android:text="Toast" />
 
-        <Button
-            android:id="@+id/button_toast"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Toast"
-            android:height="60sp"/>
-
-        <TextView
-            android:id="@+id/show_count"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:height="150sp"
-            android:text="0"
-            android:textColor="@color/purple_500"
-            android:textSize="100sp"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:background="@color/yellow"/>
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="150sp"
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/purple_500"
+        android:textSize="100sp"
+        android:textStyle="bold" />
 
 
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="60sp"
+        android:text="Count" />
 
-        <Button
-            android:id="@+id/button_count"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Count"
-            android:height="60sp"/>
-
-    </LinearLayout>
 
 </LinearLayout>
